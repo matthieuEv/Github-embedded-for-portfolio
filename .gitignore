@@ -1,2 +1,8 @@
 #MacOs
 .Ds_Store
+
+# Credential
+private_token.js
+
+# Helping files
+workInProgress/*
