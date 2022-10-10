@@ -4,7 +4,9 @@ let attrGit = git.attributes;
 let card = `<div class='card'></div>`;
 
 // Create the number of card wanted
-for (let i = 0; i < attrGit.number.value; i++) {
+let numberCard = !attrGit.number.value ? 3 : attrGit.number.value;
+
+for (let i = 0; i < numberCard; i++) {
     git.innerHTML += card;
 }
 
@@ -26,8 +28,11 @@ document.querySelectorAll('.card').forEach((card) => {
 });
 
 // add style to the git container
-git.style.cssText = `width: ${attrGit.width.value};`+
-                    ` height: ${attrGit.height.value};`+
+
+let gitWidth = !attrGit.width.value ? '100%' : attrGit.width.value;
+let gitHeight = !attrGit.height.value ? '500px' : attrGit.height.value;
+git.style.cssText = `width: ${gitWidth};`+
+                    ` height: ${gitHeight};`+
                     'display: flex;'+
                     'flex-direction: row;'+
                     'flex-wrap: nowrap;'+
@@ -35,4 +40,4 @@ git.style.cssText = `width: ${attrGit.width.value};`+
                     'align-items: center;'+
                     'align-content: stretch;'+
                     'padding: 30px;'+
-                    'background: #f00;';
+                    'background: #f00;';                    
