@@ -23,14 +23,16 @@ document.querySelectorAll('.card').forEach((card) => {
                          'margin: 20px;'+
                          'margin-top: 50px;'+
                          'margin-bottom: 50px;'+
-                         'background-color: #fff;'+
-                         'min-width: 280px;';
+                         'background-color: #fff;';
 });
 
 // add style to the git container
+let gitWidth;
+let gitHeight;
 
-let gitWidth = !attrGit.width.value ? '100%' : attrGit.width.value;
-let gitHeight = !attrGit.height.value ? '500px' : attrGit.height.value;
+typeof attrGit.width == 'undefined' ? gitWidth = '100%' : gitWidth = attrGit.width.value;
+typeof attrGit.height == 'undefined' ? gitHeight = '500px' : gitHeight = attrGit.height.value;
+
 git.style.cssText = `width: ${gitWidth};`+
                     ` height: ${gitHeight};`+
                     'display: flex;'+
@@ -39,5 +41,4 @@ git.style.cssText = `width: ${gitWidth};`+
                     'justify-content: space-around;'+
                     'align-items: center;'+
                     'align-content: stretch;'+
-                    'padding: 30px;'+
-                    'background: #f00;';                    
+                    'padding: 60px;';                    
