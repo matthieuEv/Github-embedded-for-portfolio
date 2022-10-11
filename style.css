@@ -107,9 +107,18 @@ git {
     text-align: center;
 }
 
-.stat span{
-}
-
 .stat:hover span{
     display: grid;
+}
+
+.language li:nth-child(1){
+    background-color: #ff0000;
+}
+
+.language li:nth-child(2){
+    background-color: #00ff00;
+}
+
+.language li:nth-child(3){
+    background-color: #0000ff;
 }
