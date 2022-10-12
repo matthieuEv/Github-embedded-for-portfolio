@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-size: 1em;
 }
 
 git {
@@ -25,15 +26,15 @@ git {
     order: 0;
     width: 100%;
     height: 100%;
-    margin: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 1.17em;
+    margin-top: 2.94em;
+    margin-bottom: 2.94em;
     background-color: #fff;
     border: 1px solid #0008ff;
-    min-width: 330px;
-    border-radius: 15px;
+    min-width: 19.41em;
+    border-radius: 0.88em;
     overflow: hidden;
-    max-width: 360px;
+    max-width: 21.17em;
     position: relative;
 }
 
@@ -47,8 +48,12 @@ git {
 .info{
     position: relative;
     display: grid;
-    padding: 20px;
+    padding: 1.1em;
     align-items: center;
+}
+
+.info h2{
+    font-size: 1.5em;
 }
 
 .user_img{
@@ -56,8 +61,8 @@ git {
     display: flex;
     width: 100px;
     height: 100px;
-    margin: 20px 30px 20px auto;
-    border-radius: 8px;
+    margin: 1.1em 1.7em 1.1em auto;
+    border-radius: 0.4em;
     background-color: #000000;
 }
 
@@ -65,10 +70,10 @@ git {
     position: relative;
     display: flex;
     width: 50%;
-    height: 3px;
+    height: 0.17em;
     margin-left: 25%;
     background-color: #3f3f3f;
-    border-radius: 20px;
+    border-radius: 1.17em;
 }
 
 .description{
@@ -76,7 +81,7 @@ git {
     display: block;
     width: 100%;
     height: 30%;
-    padding: 20px 30px 20px 20px;
+    padding: 1.17em 1.76em 1.17em 1.76em;
 }
 
 .tag{
@@ -84,31 +89,31 @@ git {
     display: flex;
     width: 100%;
     height: fit-content;
-    padding: 10px 30px 10px 20px;
+    padding: 0.58em 1.76em 0.58em 1.76em;
 }
 
 .tag span{
     background-color: #656565;
     color: #efefef;
-    margin-right: 10px;
-    padding: 3px 7px;
-    border-radius: 5px;
+    margin-right: 0.58em;
+    padding: 0.17em 0.41em;
+    border-radius: 0.29em;
 }
 
 .stats{
     position: relative;
     display: flex;
     width: 100%;
-    height: 80px;
+    height: 4.7em;
     align-items: center;
 }
 
 .gitIcon svg{
     position: relative;
     display: flex;
-    width: 50px;
-    height: 50px;
-    margin: 20px;
+    width: 2.94em;
+    height: 2.94em;
+    margin: 1.17em;
 }
 
 .stat svg{
@@ -116,14 +121,14 @@ git {
     display: flex;
     text-align: center;
     align-items: center;
-    width: 20px;
-    margin: 10px;
+    width: 1.17em;
+    margin: 0.58em;
 }
 
 .stat{
     position: relative;
     display: grid;
-    margin: 20px;
+    margin: 1.17em;
     text-align: center;
 }
 
@@ -134,8 +139,8 @@ git {
 .language{
     position: absolute;
     display: flex;
-    height: 380px;
-    width: 10px;
+    height: 23.5em;
+    width: 0.58em;
     right: 0;
 }
 
@@ -151,8 +156,8 @@ li{
 }
 
 .language li:hover{
-    margin-left: -10px;
-    border-radius: 10px 0 0 10px;
+    margin-left: -0.58em;
+    border-radius: 0.58em 0em 0em 0.58em;
 }
 
 li:hover::after{
@@ -161,15 +166,15 @@ li:hover::after{
     display: flex;
     position:fixed;
     width: fit-content;
-    height: 30px;
+    height: 1.76em;
     background-color: #c1c1c1;
-    z-index: 200;
+    z-index: 2;
     text-align: center;
-    transform: translateX(35px);
-    border-radius: 5px;
+    transform: translateX(2.05em);
+    border-radius: 0.29em;
     text-align: center;
     align-items: center;
-    padding: 5px 10px;
+    padding: 0.29em 0.58em;
 }
 
 .lang li:nth-child(1){
