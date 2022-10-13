@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-size: 7px;
+    font-size: 17px;
 }
 
 git {
@@ -49,7 +49,7 @@ git {
 }
 
 .card::after{
-    position: fixed;
+    position: absolute;
     content: '';
     width: 6em;
     height: 6em;
@@ -71,10 +71,28 @@ git {
     padding: 1.1em;
     align-items: center;
     color: #565656;
+    max-width: 13.52em;
 }
 
 .info h2{
     font-size: 1.5em;
+}
+
+.info h3{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.info a{
+    text-decoration: none;
+    color: #565656;
+}
+
+.info h3:hover{
+    letter-spacing: .05em;
 }
 
 .user_img{
@@ -106,12 +124,23 @@ git {
     color: #373737;
 }
 
+.description p{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .tag{
     position: relative;
     display: flex;
     width: 100%;
     height: fit-content;
+    max-width: 20em;
+    overflow: hidden;
     padding: 0.58em 1.76em 0.58em 1.76em;
+    min-height: 2.64em;
+
 }
 
 .tag span{
@@ -198,19 +227,4 @@ li:hover::after{
     text-align: center;
     align-items: center;
     padding: 0.29em 0.58em;
-}
-
-.lang li:nth-child(1){
-    background-color: #ff0000;
-    height: 50%;
-}
-
-.lang li:nth-child(2){
-    background-color: #ff8c00;
-    height: 30%;
-}
-
-.lang li:nth-child(3){
-    background-color: #ffff00;
-    height: 20%;
 }
